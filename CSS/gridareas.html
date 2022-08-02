@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+       header, aside, main, footer{
+       text-align: center;
+       padding: 25px 30px;
+       border: 2px solid black;
+       
+    }
+    body{
+        display: grid;
+        /* grid-template-columns: repeat(3,1fr);
+     grid-template-rows: auto auto auto; */
+        grid-template-areas:
+         "header header header header "
+         "  aside main main main "
+          " aside main  main main "
+          " aside  .  footer footer "
+        ;
+
+
+        grid-template-areas: 
+        "header header header"
+        "aside aside aside"
+        "footer main main"
+        ;
+    }
+
+    header{
+        grid-area: header;
+    }
+    aside{
+        grid-area: aside;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+
+    /* .wrapper {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 100px 100px;
+  grid-template-areas:
+    "a a b"
+    "a a b";
+}
+.item1 {
+  grid-area: a;
+}
+.item2 {
+  grid-area: b;
+} */
+
+  
+    
+ </style>
+</head>
+<body>
+
+<header>
+    Header
+</header>
+<aside>
+    aside
+</aside>
+<main>
+    Main
+</main>
+<footer>
+    Footer
+</footer>
+   
+<!-- 
+
+<div class="wrapper">
+    <div class="item1">Item</div>
+    <div class="item2">Item</div>
+ </div> -->
+</body>
+</html>

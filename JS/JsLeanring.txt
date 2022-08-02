@@ -1,0 +1,1 @@
+Day 0: Introduction to programming + How programming works and why needed.

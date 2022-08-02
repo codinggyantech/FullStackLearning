@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors 2</title>
+    <style>
+
+h2 , h3{
+    color: red;
+}
+
+#sp{
+    background-color: blueviolet;
+}
+
+a{
+    font-size: xx-large;
+    text-decoration: none;
+    color: brown;
+}
+/* body{
+    background-color: aquamarine;
+} */
+
+/* Pseudo Selector:  */
+a:hover{
+    font-size: 70px;
+    color: green;
+
+}
+/* h1:hover{
+    background-color: chartreuse;
+} */
+/* li:hover{
+    background-color: red;
+} */
+input:focus{
+    font-size: xx-large;
+    background-color: bisque;
+    padding: 15px;
+}
+input[type="checkbox"]:checked{
+   
+    margin: 500px;
+}
+
+
+
+
+/* a:visited{
+    color: gray;
+} */
+input[type="text"]:disabled{
+    background-color: green;
+    padding: 30px;
+}
+
+/* Pseudo Elements:  */
+h4::after{
+    content: "after";
+    background-color: red;
+}
+h4::before{
+    content: "before";
+    background-color: aquamarine;
+}
+/* Other slecotors:  */
+h1.cls  { 
+    /* Only element h1 which has cls as class then only it will be applied  */
+    color: red;
+}
+li:first-child{
+    background-color: yellow;
+}
+li:last-child{
+    background-color: green;
+}
+
+ p:first-child{
+    color: blue;
+    background-color: green;
+}
+
+li:nth-child(5){
+    color: darkblue;
+    background-color:pink ;
+}
+    </style>
+</head>
+<body>
+    <h1>Selector in Css <b>Part 1</b></h1>
+    <h1 class="cls">Selector in Css <b>Part 2</b></h1>
+    <h1 class="cl">Selector in Css <b>Part 3</b></h1>
+
+    <ol>
+        <li>Tag Selector</li>
+        <li>Id Selector</li>
+        <li>Class Selector</li>
+        <li>Universal Selector</li>
+        <li>Pseudo Selcotors</li>
+        <li>Pseudo Class selector</li>
+        <li>Grouping Selectors:</li>
+    </ol>
+    <div>
+        <p>1st p</p>
+        <p>2st p</p>
+        <p>3st p</p>
+    </div>
+
+    <h2>Tag Selector</h2>
+    <h3 >We have h3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id fugiat numquam distinctio magni quis quod consequatur veritatis dolores earum voluptas doloribus recusandae necessitatibus aspernatur, omnis tempora quas maxime asperiores accusamus.</p>
+    <span id="sp">hi i am span </span>
+
+    <a class="anchor" href="/borders.html" disabled="true">hi i am anchor tag</a> <br>
+
+    <input type="text" placeholder="Enter your name" >
+
+    <input type="checkbox" >
+
+
+    <h4>I am H4</h4>
+</body>
+</html>

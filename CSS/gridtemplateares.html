@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    *{
+        padding: 20px 30px
+    }
+    body{
+        padding: 0
+    }
+.header {
+    grid-area: hd;
+    border: 2px solid rgb(141, 128, 128);
+}
+.footer {
+    grid-area: ft;
+    border: 2px solid rgb(72, 9, 9);
+}
+.content {
+    grid-area: main;
+    border: 2px solid rgb(31, 104, 35);
+}
+.sidebar {
+    grid-area: sd;
+    border: 2px solid rgb(45, 13, 149);
+}
+.wrapper {
+    display: grid;
+   
+    /* grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto); */
+    grid-template-areas:
+      "hd hd hd hd   hd   hd   hd   hd   hd"
+      "sd sd sd main main main main main main"
+      "ft ft ft ft   ft   ft   ft   ft   ft";
+}
+@mediao-rows: minmax(100px, auto); */
+    grid-template-areas:
+      " hd hd  (max-width:768px){
+    .wrapper {
+    display: grid;
+    background-color: rgb(152, 152, 52);
+   
+    /* grid-template-columns: repeat(9, 1fr);
+    grid-authd hd hd "
+      "sd sd sd main main "
+    
+      "ft ft ft main main  ";
+}
+}
+
+
+@media (max-width:480px){
+    .wrapper {
+    display: grid;
+    background-color: yellow;
+   
+    /* grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: minmax(100px, auto); */
+    grid-template-areas:
+      "sd hd hd hd "
+      "sd main main main  "
+    
+      "sd ft ft ft  ";
+}
+}
+
+
+  
+    
+ </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>
