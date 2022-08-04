@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe books</title>
+</head>
+<body>
+
+    <h2>Welcome to Recipe book</h2>
+    <button onclick="makeTea()">Make Tea</button>
+    <button onclick="mC()">Make coffeee</button>
+
+    <p id="recipe"></p>
+
+
+    <script>
+        let  p = document.getElementById("recipe")
+
+        function makeTea(){
+           
+            p.innerHTML = `Setps Makeing tea \n `
+           
+        }
+
+     
+        function mC(){
+            
+            p.innerHTML = `
+            <h1> Make Cooofeeee </h1>
+            
+            In a cup take 1.5 teaspoons instant coffee. ... \n
+Add 3 tablespoons hot boiling water. ... \n
+First mix the coffee and sugar with water.
+Then begin to stir briskly and beat coffee for 3 to 4 minutes. ...
+Beat the coffee till its color lightens and you see a frothy layer on top.
+
+
+
+            
+            `
+        }
+
+    </script>
+    
+</body>
+</html>
