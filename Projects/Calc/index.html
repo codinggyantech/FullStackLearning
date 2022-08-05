@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcuator in JS:</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to mY calc</h1>
+    <input id="output"  value="0"  readonly/> <br/>
+ <div class="container">
+   
+    <button value="3" id="3" onclick="click3()">7</button> 
+    <button value="4" id="4" onclick="click4()" >8</button>
+    <button value= "+" id="+" onclick="clickadd()" >9</button>
+    <button value="3" id="3" onclick="click3()">+</button>  <br>
+    <button value="4" id="4" onclick="click4()" >4</button>
+    <button value= "+" id="+" onclick="clickadd()" >+</button>
+
+    <button onclick="calc()">Calucte</button>
+    <button onclick="cle()">Clear</button>
+
+
+    <button id="newbtn">new function </button>
+
+ </div>
+
+    <script>
+        let op  = document.getElementById("output")
+        let expression = ""
+      function click3(){
+        // console.log("click 3")
+            // console.log("workd")
+            let b3 = document.getElementById("3").value;
+            // console.log(b3,typeof(b3))
+            expression = expression+b3
+            op.value = expression
+            // console.log(expression,"teh express value")
+
+        }
+        function click4(){
+             let b3 = document.getElementById("4").value;
+            expression = expression+b3
+            op.value = expression
+    }
+      function clickadd(){
+        
+            let b3 = document.getElementById("+").value;
+           
+            expression = expression+b3
+            op.value = expression
+            
+            
+
+        }
+     
+let calc =()=>op.value = eval(expression)
+
+let cle = ()=> op.innerHTML = "0"
+
+function fun(){
+console.log("new fun")
+}
+
+document.getElementById("newbtn").addEventListener("onmouseenter",()=>{
+    console.log("new fun")
+})
+    </script>
+</body>
+</html>

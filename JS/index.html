@@ -7,6 +7,13 @@
     <title>Learning Js</title>
     <style>
         /* css langauge  */
+        div{
+            height: 100px;
+            display: none;
+            /* width: 100px; */
+            background-color: burlywood;
+            background-image: url("https://img.freepik.com/free-vector/realistic-bokeh-background_23-2149328704.jpg?size=626&ext=jpg&ga=GA1.2.2126500096.1659708164");
+        }
         .para{
             color: blue;
         }
@@ -20,10 +27,21 @@
         }
     </style>
 </head>
+<!-- <body onload="pageLoaded()"> -->
 <body>
-    <h1>Events:  </h1>
+    <h1 onclick="clickme()">Events:  </h1>
 
     <button onclick="clickme()" >Click Me</button>
+    <button ondblclick="clickme2()">Click double click Me</button>
+    <button on>
+        new button
+     </button>
+     <p>lorem80000000</p>
+     <div id="div" onmouseenter="fun1()" onmouseleave="fun2()">
+
+     </div>
+
+     <input type="text"  id="name" onkeyup="keyup()" onkeydown="" onfocus="focu()"  onblur="blur()" onchange="valuechange()" value="">
     <!-- <h1>Functions: update  </h1>
     <h2>😀</h2>
     <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit eveniet optio ut aperiam, ullam facere vel. Consequuntur commodi voluptates vel magni. Cum illum tenetur qui, alias eos ut saepe eaque!</p>
