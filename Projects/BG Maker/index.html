@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BG Maker</title>
+
+    <style>
+        body{
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    document.addEventListener("mousemove", () => {
+  let mousex = event.clientX; // Gets Mouse X
+  let mousey = event.clientY; // Gets Mouse Y
+  console.log(mousex, mousey);
+  let b = document.getElementsByTagName("body") 
+//   b.style.backgroudColor = rgb(mousex,mousey,0)
+document.body.style.background = `rgb(${mousex},${mousey},${(mousex+mousey)/2})`
+  // Prints data
+});
+</script>
+</html>
