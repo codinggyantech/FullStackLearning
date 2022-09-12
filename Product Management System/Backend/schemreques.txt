@@ -1,0 +1,8 @@
+{
+    "id":1,
+    "name":"IPhone ",
+    "desc":"Iphone 13 max pro..",
+    "category":"mobiles",
+    "price": 120000,
+    "img":" https://boip.in/27242-large_default/iphone-6s-16gb-certified-refurbished-very-good.jpg",
+}
