@@ -3,13 +3,11 @@ const express = require('express')
 const  routes  = require('./routes/productroutes')
 const bodyParser = require('body-parser')
 const mongoose = require("mongoose")
-var cors = require('cors')
 const app = express()
 const PORT = 9000
 //Express config:
 app.use(express.json())
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cors())
 
 //Mongo DB config:
 //Configuration for the Database

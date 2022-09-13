@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "ac02fb51-78bc-41aa-83a8-80b91418ebab",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"Sony 56 Tv \",\r\n    \"desc\":\"Best TV of Sony brand\",\r\n    \"category\":\"tv\",\r\n    \"price\": 120000,\r\n    \"img\":\"https://img.freepik.com/free-psd/samsung-tv-mockup_1022-20.jpg?size=338&ext=jpg&ga=GA1.2.1835727658.1662645668\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\":\"Sony 76 Tv \",\r\n    \"desc\":\"Best TV of Sony brand now beeing updated\",\r\n    \"category\":\"tv\",\r\n    \"price\": 120,\r\n    \"img\":\"https://img.freepik.com/free-psd/samsung-tv-mockup_1022-20.jpg?size=338&ext=jpg&ga=GA1.2.1835727658.1662645668\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/products/631f4555b605e8771c4fbfca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"products",
+						"631f4555b605e8771c4fbfca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All products",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/products/631f47455e3c9baada1b4f77",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"products",
+						"631f47455e3c9baada1b4f77"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete single Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/products/631f4555b605e8771c4fbfca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"products",
+						"631f4555b605e8771c4fbfca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete All ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9000/api/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
